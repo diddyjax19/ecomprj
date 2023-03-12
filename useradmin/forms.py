@@ -37,4 +37,4 @@ class AddProductForm(forms.ModelForm):
 
         widgets = {
         'mdf': DateTimePickerInput
-    }  
+    }
