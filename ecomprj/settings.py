@@ -11,21 +11,36 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+import os
+import dj_database_url
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
+# # Quick-start development settings - unsuitable for production
+# # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(k0oc5t+amu*z+^u#)g5hrcbpwj5oa$399y_*x6h2d=*6&kekk'
+# # SECURITY WARNING: keep the secret key used in production secret!
+# SECRET_KEY = 'django-insecure-(k0oc5t+amu*z+^u#)g5hrcbpwj5oa$399y_*x6h2d=*6&kekk'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# # Use config value to replace information for security
+# SECRET_KEY = config('SECRET KEY')
 
-ALLOWED_HOSTS = []
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
+
+# Read secret key from a file
+# with open('/etc/secret_key.txt') as f:
+#     SECRET_KEY = f.read().strip()
+
+
+# # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = True
+
+DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
