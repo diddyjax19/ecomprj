@@ -32,4 +32,3 @@ def default(request):
         'vendors':vendors,
         'min_max_price':min_max_price,
     }
-    
