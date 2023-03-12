@@ -11,4 +11,4 @@ class ProductReviewForm(forms.ModelForm):
     # Inner class of the model class, used to change the behaviour of model fields like verbose_name
     class Meta:
         model = ProductReview
-        fields = ['review', 'rating'] 
+        fields = ['review', 'rating']
