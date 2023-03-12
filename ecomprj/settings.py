@@ -46,7 +46,7 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
-        'jazzmin',
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -74,6 +74,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -152,7 +153,59 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# set static root to static folder in base directory
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# set static directories to point to static files
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
+
+# set media path
+MEDIA_URL = '/media/'
+
+# set media root to media folder
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# jazzmin custom settings for admin panel
+JAZZMIN_SETTINGS = {
+    'site_header': "Nestify Shop",
+    'site_brand': "Customer satisfaction is our priority",
+    'site_logo': "assets/imgs/theme/loading.gif",
+    'copyright': "nestify.com",
+}
+
+LOGIN_URL = "userauths:sign-in"
+LOGIN_REDIRECT_URL = "core:index"
+LOGOUT_REDIRECT_URL = "userauths:sign-in"
+
+AUTH_USER_MODEL = 'userauths.User'
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'skin': 'moono',
+        'codeSnippet_theme': 'monokai',
+        'toolbar': 'all',
+        'extraPlugins': ','.join(
+            [
+                'codesnippet',
+                'widget',
+                'dialog'
+            ]
+        ),
+    }
+}
+
+
+PAYPAL_RECEIVER_EMAIL = 'nestifystore@gmail.com'
+PAYPAL_TEST = True
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
