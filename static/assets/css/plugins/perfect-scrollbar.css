@@ -2,7 +2,7 @@
  * Container style
  */
 
- .ps {
+.ps {
     overflow: hidden !important;
     overflow-anchor: none;
     -ms-overflow-style: none;
