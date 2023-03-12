@@ -1,3 +1,4 @@
+
 from django.http import JsonResponse
 from django.shortcuts import redirect, render, get_object_or_404
 from regex import E
@@ -19,7 +20,6 @@ import calendar
 from django.db.models import Count, Avg
 from django.db.models.functions import ExtractMonth
 from django.core import serializers
-
 
 def index(request):
     # bannanas = Product.objects.all().order_by("-id")
