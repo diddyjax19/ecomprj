@@ -212,7 +212,3 @@ PAYPAL_RECEIVER_EMAIL = 'nestifystore@gmail.com'
 PAYPAL_TEST = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-CSRF_TRUSTED_ORIGINS = [
-    'https://nextit12.herokuapp.com/'
-]
