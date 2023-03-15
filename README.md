@@ -2,6 +2,8 @@
 
 The Nest Mart and Grocery is a regular store where people can go to browse and order from a variety of goods and products.The varietystretches from baked good to fresh fruits among others.The store is open 24 hrs with staffs processing order to meet the clients need, it also as a place where vendors can register and be part of the community. Through the The Nest Mart and Grocery website, users can check thier orders and the status of the delivery,they are also aware of where the good are coming from.
 
+ A simple online market place built with the Django Framework using HTML, CSS and Javascript
+
 
 This fictional site was created for Portfolio Project #4 (Full-Stack Toolkit) - Diploma in Full Stack Software Development Diploma at the [Code Institute](https://www.codeinstitute.net).
 
@@ -59,13 +61,17 @@ This fictional site was created for Portfolio Project #4 (Full-Stack Toolkit) - 
 # **Project**
 
 ## Objective
-I absolutely love crafting, both with my children, and as a personal hobby. I make patchwork quilts to relax and disconnect from work. It would be dream of mine to set up a craft café, where people could go to socialise through craft activities, and gain valuable crafting expertise at the same time. Based on the project 4 scope requirements, I was given the opportunity to build a site for this dream café.
+I absolutely love the idea of browsing through a catalogue and placing an order.The idea of placing and order adding your shipping and billing address and to sell products or services. 
+
+Secondary objectives was to providing customers with product information and review.
+
 
 ## Site Users Goal
-This café gives other like-minded craft enthusiasts the opportunity to meet each other and interact through a common shared hobby.
+This sites give the user the ability to see the products and place orders.It also gives users the ability to place the order,add the shipping address and also pay for thier order. 
 
 ## Site Owners Goal
-The goal of the site owner is to deliver a site where the users who share a passion for craft and creating can meet eachother through the craft workshops, and also share their creations with eachother by posting photos and comments.
+The goal of the site owner is to deliver a site where the users can go through a variety of categories of product,place an order,add thier shipping address and make payment.
+The goal is also to allow vendors register and be able to post information about thier product,which is subjected to review by the site owner or by the admin. 
 
 ## Project Management
 
