@@ -9,12 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-# import django_heroku
 
 from pathlib import Path
 import os
-import dj_database_url
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,25 +21,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = 'django-insecure-%o9!c3rf02q6usr!vw^s96^t*(dsv&ezbs)_u_k7^z1oa$ik0r'
-
-# # Use config value to replace information for security
-# SECRET_KEY = config('SECRET KEY')
-
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'cg#p$g+j9tax!#a3cup@1$8obt2_+&k3q+pmu)5%asj6yjpkag')
-
-# Read secret key from a file
-# with open('/etc/secret_key.txt') as f:
-#     SECRET_KEY = f.read().strip()
+SECRET_KEY = 'django-insecure-%o9!c3rf02q6usr!vw^s96^t*(dsv&ezbs)_u_k7^z1oa$ik0r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
+DEBUG = True
 
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
-# SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = False
-
-ALLOWED_HOSTS = ['nextit12.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -59,26 +43,23 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
 
 
-    # From django library
+    # Third Party
     'taggit',
     'ckeditor',
     'bootstrap_datepicker_plus',
     'bootstrap4',
     
 
-    #  Integration of paypal
+    # PayPal Integration
     'paypal.standard.ipn',
 
-    # Installed Apps
+    # Custom Apps
     'core',
     'userauths',
-    
-    
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -112,23 +93,10 @@ WSGI_APPLICATION = 'ecomprj.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd7bf39btqg2064',
-        'USER': 'fvkykdhikmlxix',
-        'PASSWORD': '9d77b14aae5b78ced8e164c94d920c11e72f17ff84caca13f3dfbf846cd1f294',
-        'HOST': 'ec2-52-50-161-219.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -171,19 +139,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# set static root to static folder in base directory
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# set static directories to point to static files
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
-
-# set media path
 MEDIA_URL = '/media/'
 
-# set media root to media folder
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # Default primary key field type
@@ -191,12 +152,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# jazzmin custom settings for admin panel
+
 JAZZMIN_SETTINGS = {
-    'site_header': "Nestify Shop",
-    'site_brand': "Customer satisfaction is our priority",
+    'site_header': "Desphixs Shop",
+    'site_brand': "You order, we deliver",
     'site_logo': "assets/imgs/theme/loading.gif",
-    'copyright': "nestify.com",
+    'copyright': "desphixs-shop.com",
 }
 
 LOGIN_URL = "userauths:sign-in"
@@ -223,7 +184,5 @@ CKEDITOR_CONFIGS = {
 }
 
 
-PAYPAL_RECEIVER_EMAIL = 'nestifystore@gmail.com'
+PAYPAL_RECEIVER_EMAIL = 'businessdestiny@gmail.com'
 PAYPAL_TEST = True
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
