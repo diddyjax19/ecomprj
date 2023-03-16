@@ -41,10 +41,8 @@
                     <!--End hero-->
                     <section class="product-tabs section-padding position-relative">
                         <div class="section-title style-2">
-                            <h3>All Products</h3>
-
+                            <h3 style = "text-center">All Products</h3>
                             {% comment %} <ul class="nav nav-tabs links" id="myTab" role="tablist">
-                                
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link active" id="nav-tab-one" data-bs-toggle="tab" data-bs-target="#tab-one" type="button" role="tab" aria-controls="tab-one" aria-selected="true">All</button>
                                 </li>
@@ -66,10 +64,8 @@
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link" id="nav-tab-seven" data-bs-toggle="tab" data-bs-target="#tab-seven" type="button" role="tab" aria-controls="tab-seven" aria-selected="false">Fruits</button>
                                 </li>
-                            </ul>  {% endcomment %}
+                            </ul> {% endcomment %}
                         </div>
-
-                        {% comment %} 
                         <!--End nav-tabs-->
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="tab-one" role="tabpanel" aria-labelledby="tab-one">
@@ -96,7 +92,7 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">{{ p.category.title }}</a>
+                                                    <a href="#">{{ p.category.title }}</a>
                                                 </div>
                                                 <h2><a href="{% url 'core:product-detail' p.pid %}">{{ p.title }}</a></h2>
                                                 <div class="product-rate-cover">
@@ -141,7 +137,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-10-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-10-2.jpg' %}" alt="" />
                                                     </a>
@@ -157,9 +153,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                                <h2><a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -186,7 +182,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-12-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-12-2.jpg' %}" alt="" />
                                                     </a>
@@ -202,9 +198,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <h2><a href="#">All Natural Italian-Style Chicken Meatballs</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 80%"></div>
@@ -231,7 +227,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-13-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-13-2.jpg' %}" alt="" />
                                                     </a>
@@ -247,9 +243,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                                <h2><a href="#">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 85%"></div>
@@ -276,7 +272,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-14-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-14-2.jpg' %}" alt="" />
                                                     </a>
@@ -289,9 +285,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Vegetables</a>
+                                                    <a href="#">Vegetables</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                                <h2><a href="#">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -318,7 +314,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-15-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-15-2.jpg' %}" alt="" />
                                                     </a>
@@ -334,9 +330,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Pet Foods</a>
+                                                    <a href="#">Pet Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                                <h2><a href="#">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -363,7 +359,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-16-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-16-2.jpg' %}" alt="" />
                                                     </a>
@@ -376,9 +372,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                                <h2><a href="#">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -405,7 +401,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-7-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-7-2.jpg' %}" alt="" />
                                                     </a>
@@ -418,9 +414,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Meats</a>
+                                                    <a href="#">Meats</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                                <h2><a href="#">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -447,7 +443,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-8-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-8-2.jpg' %}" alt="" />
                                                     </a>
@@ -463,9 +459,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                                <h2><a href="#">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -492,7 +488,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -508,9 +504,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Coffes</a>
+                                                    <a href="#">Coffes</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                                <h2><a href="#">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -537,7 +533,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-10-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-10-2.jpg' %}" alt="" />
                                                     </a>
@@ -550,9 +546,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Cream</a>
+                                                    <a href="#">Cream</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                                <h2><a href="#">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 50%"></div>
@@ -585,7 +581,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -601,9 +597,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                                <h2><a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -630,7 +626,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-8-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-8-2.jpg' %}" alt="" />
                                                     </a>
@@ -646,9 +642,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <h2><a href="#">All Natural Italian-Style Chicken Meatballs</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 80%"></div>
@@ -675,7 +671,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-7-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-7-2.jpg' %}" alt="" />
                                                     </a>
@@ -691,9 +687,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                                <h2><a href="#">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 85%"></div>
@@ -720,7 +716,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-6-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-6-2.jpg' %}" alt="" />
                                                     </a>
@@ -733,9 +729,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Vegetables</a>
+                                                    <a href="#">Vegetables</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                                <h2><a href="#">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -762,7 +758,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-5-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-5-2.jpg' %}" alt="" />
                                                     </a>
@@ -778,9 +774,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Pet Foods</a>
+                                                    <a href="#">Pet Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                                <h2><a href="#">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -807,7 +803,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-4-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-4-2.jpg' %}" alt="" />
                                                     </a>
@@ -820,9 +816,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                                <h2><a href="#">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -849,7 +845,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-3-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-3-2.jpg' %}" alt="" />
                                                     </a>
@@ -862,9 +858,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Meats</a>
+                                                    <a href="#">Meats</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                                <h2><a href="#">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -891,7 +887,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-2-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-2-2.jpg' %}" alt="" />
                                                     </a>
@@ -907,9 +903,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                                <h2><a href="#">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -936,7 +932,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -952,9 +948,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Coffes</a>
+                                                    <a href="#">Coffes</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                                <h2><a href="#">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -981,7 +977,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-1-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-1-2.jpg' %}" alt="" />
                                                     </a>
@@ -994,9 +990,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Cream</a>
+                                                    <a href="#">Cream</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                                <h2><a href="#">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 50%"></div>
@@ -1029,7 +1025,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-6-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-6-2.jpg' %}" alt="" />
                                                     </a>
@@ -1045,9 +1041,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                                <h2><a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1074,7 +1070,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-7-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-7-2.jpg' %}" alt="" />
                                                     </a>
@@ -1090,9 +1086,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <h2><a href="#">All Natural Italian-Style Chicken Meatballs</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 80%"></div>
@@ -1119,7 +1115,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-8-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-8-2.jpg' %}" alt="" />
                                                     </a>
@@ -1135,9 +1131,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                                <h2><a href="#">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 85%"></div>
@@ -1164,7 +1160,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -1177,9 +1173,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Vegetables</a>
+                                                    <a href="#">Vegetables</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                                <h2><a href="#">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1206,7 +1202,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-4-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-4-2.jpg' %}" alt="" />
                                                     </a>
@@ -1222,9 +1218,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Pet Foods</a>
+                                                    <a href="#">Pet Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                                <h2><a href="#">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1251,7 +1247,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-3-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-3-2.jpg' %}" alt="" />
                                                     </a>
@@ -1264,9 +1260,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                                <h2><a href="#">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1293,7 +1289,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-2-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-2-2.jpg' %}" alt="" />
                                                     </a>
@@ -1306,9 +1302,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Meats</a>
+                                                    <a href="#">Meats</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                                <h2><a href="#">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1335,7 +1331,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-1-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-1-2.jpg' %}" alt="" />
                                                     </a>
@@ -1351,9 +1347,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                                <h2><a href="#">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1380,7 +1376,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-11-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-11-2.jpg' %}" alt="" />
                                                     </a>
@@ -1396,9 +1392,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Coffes</a>
+                                                    <a href="#">Coffes</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                                <h2><a href="#">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1425,7 +1421,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-12-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-12-2.jpg' %}" alt="" />
                                                     </a>
@@ -1438,9 +1434,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Cream</a>
+                                                    <a href="#">Cream</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                                <h2><a href="#">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 50%"></div>
@@ -1473,7 +1469,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-12-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-12-2.jpg' %}" alt="" />
                                                     </a>
@@ -1489,9 +1485,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                                <h2><a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1518,7 +1514,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-13-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-13-2.jpg' %}" alt="" />
                                                     </a>
@@ -1534,9 +1530,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <h2><a href="#">All Natural Italian-Style Chicken Meatballs</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 80%"></div>
@@ -1563,7 +1559,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-14-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-14-2.jpg' %}" alt="" />
                                                     </a>
@@ -1579,9 +1575,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                                <h2><a href="#">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 85%"></div>
@@ -1608,7 +1604,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-15-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-15-2.jpg' %}" alt="" />
                                                     </a>
@@ -1621,9 +1617,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Vegetables</a>
+                                                    <a href="#">Vegetables</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                                <h2><a href="#">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1650,7 +1646,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-16-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-16-2.jpg' %}" alt="" />
                                                     </a>
@@ -1666,9 +1662,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Pet Foods</a>
+                                                    <a href="#">Pet Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                                <h2><a href="#">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1695,7 +1691,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-5-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-5-2.jpg' %}" alt="" />
                                                     </a>
@@ -1708,9 +1704,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                                <h2><a href="#">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1737,7 +1733,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-7-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-7-2.jpg' %}" alt="" />
                                                     </a>
@@ -1750,9 +1746,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Meats</a>
+                                                    <a href="#">Meats</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                                <h2><a href="#">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1779,7 +1775,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-8-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-8-2.jpg' %}" alt="" />
                                                     </a>
@@ -1795,9 +1791,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                                <h2><a href="#">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1824,7 +1820,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -1840,9 +1836,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Coffes</a>
+                                                    <a href="#">Coffes</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                                <h2><a href="#">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1869,7 +1865,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-10-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-10-2.jpg' %}" alt="" />
                                                     </a>
@@ -1882,9 +1878,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Cream</a>
+                                                    <a href="#">Cream</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                                <h2><a href="#">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 50%"></div>
@@ -1917,7 +1913,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-4-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-4-2.jpg' %}" alt="" />
                                                     </a>
@@ -1933,9 +1929,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                                <h2><a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -1962,7 +1958,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-6-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-6-2.jpg' %}" alt="" />
                                                     </a>
@@ -1978,9 +1974,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <h2><a href="#">All Natural Italian-Style Chicken Meatballs</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 80%"></div>
@@ -2007,7 +2003,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-8-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-8-2.jpg' %}" alt="" />
                                                     </a>
@@ -2023,9 +2019,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                                <h2><a href="#">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 85%"></div>
@@ -2052,7 +2048,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -2065,9 +2061,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Vegetables</a>
+                                                    <a href="#">Vegetables</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                                <h2><a href="#">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2094,7 +2090,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-5-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-5-2.jpg' %}" alt="" />
                                                     </a>
@@ -2110,9 +2106,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Pet Foods</a>
+                                                    <a href="#">Pet Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                                <h2><a href="#">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2139,7 +2135,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-6-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-6-2.jpg' %}" alt="" />
                                                     </a>
@@ -2152,9 +2148,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                                <h2><a href="#">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2181,7 +2177,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-7-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-7-2.jpg' %}" alt="" />
                                                     </a>
@@ -2194,9 +2190,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Meats</a>
+                                                    <a href="#">Meats</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                                <h2><a href="#">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2223,7 +2219,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-8-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-8-2.jpg' %}" alt="" />
                                                     </a>
@@ -2239,9 +2235,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                                <h2><a href="#">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2268,7 +2264,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -2284,9 +2280,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Coffes</a>
+                                                    <a href="#">Coffes</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                                <h2><a href="#">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2313,7 +2309,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-10-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-10-2.jpg' %}" alt="" />
                                                     </a>
@@ -2326,9 +2322,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Cream</a>
+                                                    <a href="#">Cream</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                                <h2><a href="#">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 50%"></div>
@@ -2361,7 +2357,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-5-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-5-2.jpg' %}" alt="" />
                                                     </a>
@@ -2377,9 +2373,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
+                                                <h2><a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2406,7 +2402,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-3-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-3-2.jpg' %}" alt="" />
                                                     </a>
@@ -2422,9 +2418,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a></h2>
+                                                <h2><a href="#">All Natural Italian-Style Chicken Meatballs</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 80%"></div>
@@ -2451,7 +2447,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-7-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-7-2.jpg' %}" alt="" />
                                                     </a>
@@ -2467,9 +2463,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
+                                                <h2><a href="#">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 85%"></div>
@@ -2496,7 +2492,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -2509,9 +2505,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Vegetables</a>
+                                                    <a href="#">Vegetables</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
+                                                <h2><a href="#">Foster Farms Takeout Crispy Classic Buffalo Wings</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2538,7 +2534,7 @@
                                         <div class="product-cart-wrap mb-30">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-10-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-10-2.jpg' %}" alt="" />
                                                     </a>
@@ -2554,9 +2550,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Pet Foods</a>
+                                                    <a href="#">Pet Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
+                                                <h2><a href="#">Blue Diamond Almonds Lightly Salted Vegetables</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2583,7 +2579,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-16-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-16-2.jpg' %}" alt="" />
                                                     </a>
@@ -2596,9 +2592,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Hodo Foods</a>
+                                                    <a href="#">Hodo Foods</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Chobani Complete Vanilla Greek Yogurt</a></h2>
+                                                <h2><a href="#">Chobani Complete Vanilla Greek Yogurt</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2625,7 +2621,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-7-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-7-2.jpg' %}" alt="" />
                                                     </a>
@@ -2638,9 +2634,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Meats</a>
+                                                    <a href="#">Meats</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
+                                                <h2><a href="#">Canada Dry Ginger Ale – 2 L Bottle - 200ml - 400g</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2667,7 +2663,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-8-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-8-2.jpg' %}" alt="" />
                                                     </a>
@@ -2683,9 +2679,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Snack</a>
+                                                    <a href="#">Snack</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
+                                                <h2><a href="#">Encore Seafoods Stuffed Alaskan Salmon</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2712,7 +2708,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-9-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-9-2.jpg' %}" alt="" />
                                                     </a>
@@ -2728,9 +2724,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Coffes</a>
+                                                    <a href="#">Coffes</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
+                                                <h2><a href="#">Gorton’s Beer Battered Fish Fillets with soft paper</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 90%"></div>
@@ -2757,7 +2753,7 @@
                                         <div class="product-cart-wrap">
                                             <div class="product-img-action-wrap">
                                                 <div class="product-img product-img-zoom">
-                                                    <a href="shop-product-right.html">
+                                                    <a href="#">
                                                         <img class="default-img" src="{% static 'assets/imgs/shop/product-10-1.jpg' %}" alt="" />
                                                         <img class="hover-img" src="{% static 'assets/imgs/shop/product-10-2.jpg' %}" alt="" />
                                                     </a>
@@ -2770,9 +2766,9 @@
                                             </div>
                                             <div class="product-content-wrap">
                                                 <div class="product-category">
-                                                    <a href="shop-grid-right.html">Cream</a>
+                                                    <a href="#">Cream</a>
                                                 </div>
-                                                <h2><a href="shop-product-right.html">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
+                                                <h2><a href="#">Haagen-Dazs Caramel Cone Ice Cream Ketchup</a></h2>
                                                 <div class="product-rate-cover">
                                                     <div class="product-rate d-inline-block">
                                                         <div class="product-rating" style="width: 50%"></div>
@@ -2804,11 +2800,10 @@
                     </section>
                     <!--Products Tabs-->
 
-{% comment %}                     
-                    <section class="section-padding pb-5">
+                    {% comment %} <section class="section-padding pb-5">
                         <div class="section-title">
                             <h3 class="">Deals Of The Day</h3>
-                            <a class="show-all" href="shop-grid-right.html">
+                            <a class="show-all" href="#">
                                 All Deals
                                 <i class="fi-rs-angle-right"></i>
                             </a>
@@ -2818,7 +2813,7 @@
                                 <div class="product-cart-wrap style-2">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img">
-                                            <a href="shop-product-right.html">
+                                            <a href="#">
                                                 <img src="{% static 'assets/imgs/banner/banner-5.png' %}" alt="" />
                                             </a>
                                         </div>
@@ -2828,7 +2823,7 @@
                                             <div class="deals-countdown" data-countdown="2025/03/25 00:00:00"></div>
                                         </div>
                                         <div class="deals-content">
-                                            <h2><a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown</a></h2>
+                                            <h2><a href="#">Seeds of Change Organic Quinoa, Brown</a></h2>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 90%"></div>
@@ -2855,7 +2850,7 @@
                                 <div class="product-cart-wrap style-2">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img">
-                                            <a href="shop-product-right.html">
+                                            <a href="#">
                                                 <img src="{% static 'assets/imgs/banner/banner-6.png' %}" alt="" />
                                             </a>
                                         </div>
@@ -2865,7 +2860,7 @@
                                             <div class="deals-countdown" data-countdown="2026/04/25 00:00:00"></div>
                                         </div>
                                         <div class="deals-content">
-                                            <h2><a href="shop-product-right.html">Perdue Simply Smart Organics Gluten</a></h2>
+                                            <h2><a href="#">Perdue Simply Smart Organics Gluten</a></h2>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 90%"></div>
@@ -2892,7 +2887,7 @@
                                 <div class="product-cart-wrap style-2">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img">
-                                            <a href="shop-product-right.html">
+                                            <a href="#">
                                                 <img src="{% static 'assets/imgs/banner/banner-7.png' %}" alt="" />
                                             </a>
                                         </div>
@@ -2902,7 +2897,7 @@
                                             <div class="deals-countdown" data-countdown="2027/03/25 00:00:00"></div>
                                         </div>
                                         <div class="deals-content">
-                                            <h2><a href="shop-product-right.html">Signature Wood-Fired Mushroom</a></h2>
+                                            <h2><a href="#">Signature Wood-Fired Mushroom</a></h2>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
@@ -2929,7 +2924,7 @@
                                 <div class="product-cart-wrap style-2">
                                     <div class="product-img-action-wrap">
                                         <div class="product-img">
-                                            <a href="shop-product-right.html">
+                                            <a href="#">
                                                 <img src="{% static 'assets/imgs/banner/banner-8.png' %}" alt="" />
                                             </a>
                                         </div>
@@ -2939,7 +2934,7 @@
                                             <div class="deals-countdown" data-countdown="2025/02/25 00:00:00"></div>
                                         </div>
                                         <div class="deals-content">
-                                            <h2><a href="shop-product-right.html">Simply Lemonade with Raspberry Juice</a></h2>
+                                            <h2><a href="#">Simply Lemonade with Raspberry Juice</a></h2>
                                             <div class="product-rate-cover">
                                                 <div class="product-rate d-inline-block">
                                                     <div class="product-rating" style="width: 80%"></div>
@@ -2964,9 +2959,10 @@
                             </div>
                         </div>
                     </section> {% endcomment %}
+
                     <!--End Deals-->
 
-{% comment %} 
+
                     <section class="banners">
                         <div class="row">
                             <div class="col-lg-4 col-md-6">
@@ -2976,7 +2972,7 @@
                                         <h4>
                                             Everyday Fresh & <br />Clean with Our<br /> Products
                                         </h4>
-                                        <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                        <a href="{% url 'core:product-list' %}" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -2987,7 +2983,7 @@
                                         <h4>
                                             Make your Breakfast<br /> Healthy and Easy
                                         </h4>
-                                        <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                        <a href="{% url 'core:product-list' %}" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -2996,45 +2992,42 @@
                                     <img src="{% static 'assets/imgs/banner/banner-3.png' %}" alt="" />
                                     <div class="banner-text">
                                         <h4>The best Organic <br />Products Online</h4>
-                                        <a href="shop-grid-right.html" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
+                                        <a href="{% url 'core:product-list' %}" class="btn btn-xs">Shop Now <i class="fi-rs-arrow-small-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section> {% endcomment %}
-
-
+                    </section>
                     <!--End banners-->
                 </div>
-
-                
                 <div class="col-lg-1-5 primary-sidebar sticky-sidebar pt-30">
                     <div class="sidebar-widget widget-category-2 mb-30">
                         <h5 class="section-title style-1 mb-30">Category</h5>
                         <ul>
                             {% for c in categories %}
-                                <li>
-                                    <a href="{% url 'core:category-product-list' c.cid %}"> <img src="{% static 'assets/imgs/theme/icons/category-1.svg' %}" alt="" />{{c.title}}</a>
-                                </li>
+
+                            <li>
+                                <a href="{% url 'core:category-product-list' c.cid %}"> <img src="{{ c.image.url }}" alt="" />{{c.title}}</a>
+                            </li>
                             {% endfor %}
-                            <hr>
                             {% comment %} <li>
-                                <a href="shop-grid-right.html"> <img src="{% static 'assets/imgs/theme/icons/category-1.svg' %}" alt="" />Milks & Dairies</a><span class="count">30</span>
+                                <a href="#"> <img src="{% static 'assets/imgs/theme/icons/category-1.svg' %}" alt="" />Milks & Dairies</a><span class="count">30</span>
                             </li>
                             <li>
-                                <a href="shop-grid-right.html"> <img src="{% static 'assets/imgs/theme/icons/category-2.svg' %}" alt="" />Clothing</a><span class="count">35</span>
+                                <a href="#"> <img src="{% static 'assets/imgs/theme/icons/category-2.svg' %}" alt="" />Clothing</a><span class="count">35</span>
                             </li>
                             <li>
-                                <a href="shop-grid-right.html"> <img src="{% static 'assets/imgs/theme/icons/category-3.svg' %}" alt="" />Pet Foods </a><span class="count">42</span>
+                                <a href="#"> <img src="{% static 'assets/imgs/theme/icons/category-3.svg' %}" alt="" />Pet Foods </a><span class="count">42</span>
                             </li>
                             <li>
-                                <a href="shop-grid-right.html"> <img src="{% static 'assets/imgs/theme/icons/category-4.svg' %}" alt="" />Baking material</a><span class="count">68</span>
+                                <a href="#"> <img src="{% static 'assets/imgs/theme/icons/category-4.svg' %}" alt="" />Baking material</a><span class="count">68</span>
                             </li>
                             <li>
-                                <a href="shop-grid-right.html"> <img src="{% static 'assets/imgs/theme/icons/category-5.svg' %}" alt="" />Fresh Fruit</a><span class="count">87</span>
+                                <a href="#"> <img src="{% static 'assets/imgs/theme/icons/category-5.svg' %}" alt="" />Fresh Fruit</a><span class="count">87</span>
                             </li> {% endcomment %}
                         </ul>
                     </div>
+
                     <!-- Fillter By Price -->
                     {% comment %} <div class="sidebar-widget price_range range mb-30">
                         <h5 class="section-title style-1 mb-30">Fill by price</h5>
@@ -3073,7 +3066,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="shop-grid-right.html" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
+                        <a href="#" class="btn btn-sm btn-default"><i class="fi-rs-filter mr-5"></i> Fillter</a>
                     </div>
                     <!-- Product sidebar Widget -->
                     <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
@@ -3132,7 +3125,7 @@
                 <div class="section-title">
                     <div class="title">
                         <h3>Shop by Categories</h3>
-                        <a class="show-all" href="shop-grid-right.html">
+                        <a class="show-all" href="#">
                             All Categories
                             <i class="fi-rs-angle-right"></i>
                         </a>
@@ -3143,95 +3136,95 @@
                     <div class="carausel-8-columns" id="carausel-8-columns">
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-1.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-1.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Milks and <br />Dairies</a>
+                                <a href="#">Milks and <br />Dairies</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-2.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-2.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Wines & <br />
+                                <a href="#">Wines & <br />
                                     Alcohol</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-3.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-3.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Clothing & <br />Beauty</a>
+                                <a href="#">Clothing & <br />Beauty</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-4.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-4.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Pet Foods <br />& Toy</a>
+                                <a href="#">Pet Foods <br />& Toy</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-5.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-5.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Packaged <br />fast food</a>
+                                <a href="#">Packaged <br />fast food</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-6.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-6.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Baking <br />material</a>
+                                <a href="#">Baking <br />material</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-7.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-7.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Vegetables <br />& tubers</a>
+                                <a href="#">Vegetables <br />& tubers</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-8.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-8.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Fresh <br />Seafood</a>
+                                <a href="#">Fresh <br />Seafood</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-9.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-9.svg' %}" alt="" /></a>
                             </figure>
                             <h6>
-                                <a href="shop-grid-right.html">Noodles <br />Rice</a>
+                                <a href="#">Noodles <br />Rice</a>
                             </h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-10.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-10.svg' %}" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Fastfood</a></h6>
+                            <h6><a href="#">Fastfood</a></h6>
                         </div>
                         <div class="card-1">
                             <figure class="img-hover-scale overflow-hidden">
-                                <a href="shop-grid-right.html"><img src="{% static 'assets/imgs/theme/icons/category-11.svg' %}" alt="" /></a>
+                                <a href="#"><img src="{% static 'assets/imgs/theme/icons/category-11.svg' %}" alt="" /></a>
                             </figure>
-                            <h6><a href="shop-grid-right.html">Ice cream</a></h6>
+                            <h6><a href="#">Ice cream</a></h6>
                         </div>
                     </div>
                 </div>
-            </div> {% endcomment %}
+            </div>
         </section>
         <!--End category slider-->
-        {% comment %} <section class="section-padding mb-30">
+        <section class="section-padding mb-30">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 col-md-6 mb-sm-5 mb-md-0">
@@ -3239,11 +3232,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-1.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-1.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                        <a href="#">Nestle Original Coffee-Mate Coffee Creamer</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3259,11 +3252,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-2.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-2.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                        <a href="#">Nestle Original Coffee-Mate Coffee Creamer</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3279,11 +3272,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-3.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-3.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Nestle Original Coffee-Mate Coffee Creamer</a>
+                                        <a href="#">Nestle Original Coffee-Mate Coffee Creamer</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3304,11 +3297,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-4.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-4.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Organic Cage-Free Grade A Large Brown Eggs</a>
+                                        <a href="#">Organic Cage-Free Grade A Large Brown Eggs</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3324,11 +3317,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-5.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-5.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Seeds of Change Organic Quinoa, Brown, & Red Rice</a>
+                                        <a href="#">Seeds of Change Organic Quinoa, Brown, & Red Rice</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3344,11 +3337,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-6.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-6.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Naturally Flavored Cinnamon Vanilla Light Roast Coffee</a>
+                                        <a href="#">Naturally Flavored Cinnamon Vanilla Light Roast Coffee</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3369,11 +3362,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-7.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-7.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Pepperidge Farm Farmhouse Hearty White Bread</a>
+                                        <a href="#">Pepperidge Farm Farmhouse Hearty White Bread</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3389,11 +3382,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-8.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-8.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Organic Frozen Triple Berry Blend</a>
+                                        <a href="#">Organic Frozen Triple Berry Blend</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3409,11 +3402,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-9.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-9.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Oroweat Country Buttermilk Bread</a>
+                                        <a href="#">Oroweat Country Buttermilk Bread</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3434,11 +3427,11 @@
                         <div class="product-list-small animated animated">
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-10.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-10.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
+                                        <a href="#">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3454,11 +3447,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-11.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-11.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
+                                        <a href="#">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">
@@ -3474,11 +3467,11 @@
                             </article>
                             <article class="row align-items-center hover-up">
                                 <figure class="col-md-4 mb-0">
-                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/shop/thumbnail-12.jpg' %}" alt="" /></a>
+                                    <a href="#"><img src="{% static 'assets/imgs/shop/thumbnail-12.jpg' %}" alt="" /></a>
                                 </figure>
                                 <div class="col-md-8 mb-0">
                                     <h6>
-                                        <a href="shop-product-right.html">All Natural Italian-Style Chicken Meatballs</a>
+                                        <a href="#">All Natural Italian-Style Chicken Meatballs</a>
                                     </h6>
                                     <div class="product-rate-cover">
                                         <div class="product-rate d-inline-block">

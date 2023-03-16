@@ -5,10 +5,9 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Nest - Online market place</title>
+    <title>Nest - Multipurpose eCommerce HTML Template</title>
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="description" content="Online market place" />
-    <meta name="keywords" content="Online, market, discount, sell, Beauty" />
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta property="og:title" content="" />
     <meta property="og:type" content="" />
@@ -192,7 +191,6 @@
         <div class="header-middle header-middle-ptb-1 d-none d-lg-block">
             <div class="container">
                 <div class="header-wrap">
-                    {% comment %} header logo {% endcomment %}
                     <div class="logo logo-width-1">
                         <a href="{% url 'core:index' %}"><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
                     </div>
@@ -355,8 +353,74 @@
                                         <a href="{% url 'core:product-list'  %}">Shop</a>
                                     </li>
 
+                                    <li>
+                                        <a href="{% url 'core:vendor-list' %}">Vendors </a>
+
+                                    </li>
+                                    
+                                    {% comment %} <li class="position-static">
+                                        <a href="#">Mega menu <i class="fi-rs-angle-down"></i></a>
+                                        <ul class="mega-menu">
+                                            <li class="sub-mega-menu sub-mega-menu-width-22">
+                                                <a class="menu-title" href="#">Fruit & Vegetables</a>
+                                                <ul>
+                                                    <li><a href="shop-product-right.html">Meat & Poultry</a></li>
+                                                    <li><a href="shop-product-right.html">Fresh Vegetables</a></li>
+                                                    <li><a href="shop-product-right.html">Herbs & Seasonings</a></li>
+                                                    <li><a href="shop-product-right.html">Cuts & Sprouts</a></li>
+                                                    <li><a href="shop-product-right.html">Exotic Fruits & Veggies</a></li>
+                                                    <li><a href="shop-product-right.html">Packaged Produce</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-mega-menu sub-mega-menu-width-22">
+                                                <a class="menu-title" href="#">Breakfast & Dairy</a>
+                                                <ul>
+                                                    <li><a href="shop-product-right.html">Milk & Flavoured Milk</a></li>
+                                                    <li><a href="shop-product-right.html">Butter and Margarine</a></li>
+                                                    <li><a href="shop-product-right.html">Eggs Substitutes</a></li>
+                                                    <li><a href="shop-product-right.html">Marmalades</a></li>
+                                                    <li><a href="shop-product-right.html">Sour Cream</a></li>
+                                                    <li><a href="shop-product-right.html">Cheese</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="sub-mega-menu sub-mega-menu-width-22">
+                                                <a class="menu-title" href="#">Meat & Seafood</a>
+                                                <ul>
+                                                    <li><a href="shop-product-right.html">Breakfast Sausage</a></li>
+                                                    <li><a href="shop-product-right.html">Dinner Sausage</a></li>
+                                                    <li><a href="shop-product-right.html">Chicken</a></li>
+                                                    <li><a href="shop-product-right.html">Sliced Deli Meat</a></li>
+                                                    <li><a href="shop-product-right.html">Wild Caught Fillets</a></li>
+                                                    <li><a href="shop-product-right.html">Crab and Shellfish</a></li>
+                                                </ul>
+                                            </li>
+                                             <li class="sub-mega-menu sub-mega-menu-width-34">
+                                                <div class="menu-banner-wrap">
+                                                    <a href="shop-product-right.html"><img src="{% static 'assets/imgs/banner/banner-menu.png' %}" alt="Nest" /></a>
+                                                    <div class="menu-banner-content">
+                                                        <h4>Hot deals</h4>
+                                                        <h3>
+                                                            Don't miss<br /> Trending
+                                                        </h3>
+                                                        <div class="menu-banner-price">
+                                                            <span class="new-price text-success">Save to 50%</span>
+                                                        </div>
+                                                        <div class="menu-banner-btn">
+                                                            <a href="shop-product-right.html">Shop now</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-banner-discount">
+                                                        <h3>
+                                                            <span>25%</span> off
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </li> 
+                                        </ul>
+                                    </li> {% endcomment %}
+
                                     {% comment %} <li>
-                           
+                                        <a>Blog</a>
 
                                     </li> {% endcomment %}
                                     <li>
@@ -379,7 +443,7 @@
                     </div>
                     <div class="hotline d-none d-lg-flex">
                         <img src="{% static 'assets/imgs/theme/icons/icon-headphone.svg' %}" alt="hotline" />
-                        <p>+49- 1521 532<span>24/7 Support Center</span></p>
+                        <p>1900 - 888<span>24/7 Support Center</span></p>
                     </div>
                     <div class="header-action-icon-2 d-block d-lg-none">
                         <div class="burger-icon burger-icon-white">
@@ -437,7 +501,7 @@
         <div class="mobile-header-wrapper-inner">
             <div class="mobile-header-top">
                 <div class="mobile-header-logo">
-                    <a href={% url 'core:index' %}><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
+                    <a href="{% url 'core:index' %}"><img src="{% static 'assets/imgs/theme/logo.svg' %}" alt="logo" /></a>
                 </div>
                 <div class="mobile-menu-close close-style-wrap close-style-position-inherit">
                     <button class="close-style search-close">
@@ -453,40 +517,28 @@
                         <button type="submit"><i class="fi-rs-search"></i></button>
                     </form>
                 </div>
+                {% comment %} mobile menu start {% endcomment %}
                 <div class="mobile-menu-wrap mobile-header-border">
-                    <!-- mobile menu start -->
                     <nav>
                         <ul class="mobile-menu font-heading">
                             <li class="menu-item-has-children">
-                                <a href="index.html">Home</a>
-                                <ul class="dropdown">
-                                    <li><a href="index.html">Home 1</a></li>
-                                    <li><a href="index-2.html">Home 2</a></li>
-                                    <li><a href="index-3.html">Home 3</a></li>
-                                    <li><a href="index-4.html">Home 4</a></li>
-                                    <li><a href="index-5.html">Home 5</a></li>
-                                    <li><a href="index-6.html">Home 6</a></li>
-                                </ul>
+                                <a href={% url 'core:index' %}>Home</a>
+                                
                             </li>
                             {% comment %} 
                             </li> {% endcomment %}
                             <li class="menu-item-has-children">
-                                <a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li><a href="page-about.html">About Us</a></li>
-                                    <li><a href="page-contact.html">Contact</a></li>
-                                    <li><a href="page-account.html">My Account</a></li>
-                                    <li><a href="page-login.html">Login</a></li>
-                                    <li><a href="page-register.html">Register</a></li>
-                                    <li><a href="page-forgot-password.html">Forgot password</a></li>
-                                    <li><a href="page-reset-password.html">Reset password</a></li>
-                                    <li><a href="page-purchase-guide.html">Purchase Guide</a></li>
-                                    <li><a href="page-privacy-policy.html">Privacy Policy</a></li>
-                                    <li><a href="page-terms.html">Terms of Service</a></li>
-                                    <li><a href="page-404.html">404 Page</a></li>
+                                <a href="#">Pages <i class="fi-rs-angle-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li><a href="{% url 'core:about_us' %}">About Us</a></li>
+                                    <li><a href="{% url 'core:contact' %}">Contact</a></li>
+                                    <li><a href="{% url 'core:dashboard' %}">My Dashboard</a></li>
+                                    <li><a href="{% url 'core:purchase_guide' %}">Purchase Guide</a></li>
+                                    <li><a href="{% url 'core:privacy_policy' %}">Privacy Policy</a></li>
+                                    <li><a href="{% url 'core:terms_of_service' %}">Terms of Service</a></li>
                                 </ul>
                             </li>
-                            <li class="menu-item-has-children">
+                            {% comment %} <li class="menu-item-has-children">
                                 <a href="#">Language</a>
                                 <ul class="dropdown">
                                     <li><a href="#">English</a></li>
@@ -494,7 +546,7 @@
                                     <li><a href="#">German</a></li>
                                     <li><a href="#">Spanish</a></li>
                                 </ul>
-                            </li>
+                            </li> {% endcomment %}
                         </ul>
                     </nav>
                     <!-- mobile menu end -->
@@ -504,7 +556,11 @@
                         <a href="page-contact.html"><i class="fi-rs-marker"></i> Our location </a>
                     </div>
                     <div class="single-mobile-header-info">
-                        <a href="page-login.html"><i class="fi-rs-user"></i>Log In / Sign Up </a>
+                        {% if request.user.is_authenticated %}
+                        <a href="{% url 'userauths:sign-out' %}"><i class="fi-rs-user"></i>Log Out  </a>
+                        {% else %}
+                        <a href="{% url 'userauths:sign-in' %}"><i class="fi-rs-user"></i>Log In  </a>
+                        {% endif %}
                     </div>
                     <div class="single-mobile-header-info">
                         <a href="#"><i class="fi-rs-headphones"></i>(+01) - 2345 - 6789 </a>
@@ -515,8 +571,8 @@
                     <a href="https://www.facebook.com"><img src="{% static 'assets/imgs/theme/icons/icon-facebook-white.svg' %}" alt="" /></a>
                     <a href="https://www.twitter.com"><img src="{% static 'assets/imgs/theme/icons/icon-twitter-white.svg' %}" alt="" /></a>
                     <a href="https://www.instagram.com"><img src="{% static 'assets/imgs/theme/icons/icon-instagram-white.svg' %}" alt="" /></a>
-                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
-                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}" alt="" /></a>
+                    {% comment %} <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-pinterest-white.svg' %}" alt="" /></a>
+                    <a href="#"><img src="{% static 'assets/imgs/theme/icons/icon-youtube-white.svg' %}" alt="" /></a> {% endcomment %}
                 </div>
                 <div class="site-copyright">Copyright 2023 - © Nest. All rights reserved. Powered by Nest.</div>
             </div>
@@ -636,13 +692,13 @@
                                 {% comment %} <p class="font-lg text-heading">Awesome grocery store </p> {% endcomment %}
                             </div>
                             <ul class="contact-infor">
-                                <li><img src="{% static 'assets/imgs/theme/icons/icon-location.svg' %}" alt="" /><strong>Address: </strong> <span>761 W bluetown Ave Bavaria, Germany</span></li>
-                                {% comment %} <li><img src="{% static 'assets/imgs/theme/icons/icon-contact.svg' %}" alt="" /><strong>Call Us:</strong><span>(+91) - 540-025-124553</span></li> {% endcomment %}
-                                <li><img src="{% static 'assets/imgs/theme/icons/icon-email-2.svg' %}" alt="" /><strong>Email:</strong><span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a190b060f2a240f191e44090507">neststore@contact.com</a></span></li>
+                                <li><img src="{% static 'assets/imgs/theme/icons/icon-location.svg' %}" alt="" /><strong>Address: </strong> <span>761 W bluetown Ave Bavaria</span></li>
+                                <li><img src="{% static 'assets/imgs/theme/icons/icon-contact.svg' %}" alt="" /><strong>Call Us:</strong><span>(+91) - 540-025-124553</span></li>
+                                <li><img src="{% static 'assets/imgs/theme/icons/icon-email-2.svg' %}" alt="" /><strong>Email:</strong>&nbsp;<span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6a190b060f2a240f191e44090507">neststore@contact.com</a></span></li>
                                 {% comment %} <li><img src="{% static 'assets/imgs/theme/icons/icon-clock.svg' %}" alt="" /><strong>Hours:</strong><span>10:00 - 18:00, Mon - Sat</span></li> {% endcomment %}
                             </ul>
                         </div>
-                    </div>
+                    </div> 
                     <div class="footer-link-widget col">
                         <h4 class="widget-title">Company</h4>
                         <ul class="footer-list mb-sm-5 mb-md-0">
@@ -722,7 +778,17 @@
             </div>
         </div>
     </footer>
-   {% comment %} footer {% endcomment %}
+    <!-- Preloader Start -->
+    <!-- <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="text-center">
+                    <img src="{% static '{% static ' %}'assets/imgs/theme/loading.gif' %}" alt="" />
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Vendor JS-->
     <script data-cfasync="false" src="{% static '/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js' %}"></script>
     <script src="{% static 'assets/js/vendor/modernizr-3.6.0.min.js' %}"></script>
     <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>

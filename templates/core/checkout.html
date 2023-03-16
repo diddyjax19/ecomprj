@@ -24,12 +24,12 @@
                 <div class="col-lg-7">
                     <div class="row mb-50">
                         
-                        <div class="col-lg-6">
+                        {% comment %} <div class="col-lg-6">
                             <form method="post" class="apply-coupon">
                                 <input type="text" placeholder="Enter Coupon Code...">
                                 <button class="btn  btn-md" name="login">Apply Coupon</button>
                             </form>
-                        </div>
+                        </div> {% endcomment %}
                     </div>
                     <div class="row">
                         <h4 class="mb-30">Billing Details</h4>
@@ -95,10 +95,10 @@
                                 <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios3" checked="">
                                 <label class="form-check-label" for="exampleRadios3" data-bs-toggle="collapse" data-target="#bankTranfer" aria-controls="bankTranfer">Direct Bank Transfer</label>
                             </div>
-                            <div class="custome-radio">
+                            {% comment %} <div class="custome-radio">
                                 <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios4" checked="">
                                 <label class="form-check-label" for="exampleRadios4" data-bs-toggle="collapse" data-target="#checkPayment" aria-controls="checkPayment">Cash on delivery</label>
-                            </div>
+                            </div> {% endcomment %}
                             <div class="custome-radio">
                                 <input class="form-check-input" required="" type="radio" name="payment_option" id="exampleRadios5" checked="">
                                 <label class="form-check-label" for="exampleRadios5" data-bs-toggle="collapse" data-target="#paypal" aria-controls="paypal">Online Getway</label>
