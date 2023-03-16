@@ -33,35 +33,28 @@ RATING = (
 
 
 
-# save user uploads in seperate folders
+
 def user_directory_path(instance, filename):
-    # file will be uploaded to MEDIA_ROOT / user_<id>/<filename> (https://www.geeksforgeeks.org/filefield-django-models/)
     return 'user_{0}/{1}'.format(instance.user.id, filename)
 
-# model category
 class Category(models.Model):
     cid = ShortUUIDField(unique=True, length=10, max_length=20, prefix="cat", alphabet="abcdefgh12345")
     title = models.CharField(max_length=100, default="Food")
     image = models.ImageField(upload_to="category", default="category.jpg")
 
-    # Inner class of the model class, used to change the behaviour of model fields like verbose_name
     class Meta:
         verbose_name_plural = "Categories"
 
     def category_image(self):
         return mark_safe('<img src="%s" width="50" height="50" />' % (self.image.url))
 
-    # returns a human-readable, or informal, string representation of an object
     def __str__(self):
         return self.title
 
-
-# From django-taggit, enable easy tagging
 class Tags(models.Model):
     pass
 
 
-# Vendor model
 class Vendor(models.Model):
     vid = ShortUUIDField(unique=True, length=10, max_length=20, prefix="ven", alphabet="abcdefgh12345")
 
@@ -85,7 +78,6 @@ class Vendor(models.Model):
     class Meta:
         verbose_name_plural = "Vendors"
 
-    # vendor image
     def vendor_image(self):
         return mark_safe('<img src="%s" width="50" height="50" />' % (self.image.url))
 
@@ -93,7 +85,6 @@ class Vendor(models.Model):
         return self.title
 
 
-# Product Model
 class Product(models.Model):
     pid = ShortUUIDField(unique=True, length=10, max_length=20, alphabet="abcdefgh12345")
 
@@ -106,8 +97,8 @@ class Product(models.Model):
     # description = models.TextField(null=True, blank=True, default="This is the product")
     description = RichTextUploadingField(null=True, blank=True, default="This is the product")
 
-    price = models.DecimalField(max_digits=7, decimal_places=2, default="1.99")
-    old_price = models.DecimalField(max_digits=7, decimal_places=2, default="2.99")
+    price = models.DecimalField(max_digits=99999999999999, decimal_places=2, default="1.99")
+    old_price = models.DecimalField(max_digits=99999999999999, decimal_places=2, default="2.99")
 
     specifications = RichTextUploadingField(null=True, blank=True)
     # specifications = models.TextField(null=True, blank=True)
@@ -117,6 +108,8 @@ class Product(models.Model):
     mfd = models.DateTimeField(auto_now_add=False, null=True, blank=True)
 
     tags = TaggableManager(blank=True)
+
+    # tags = models.ForeignKey(Tags, on_delete=models.SET_NULL, null=True)
 
     product_status = models.CharField(choices=STATUS, max_length=10, default="in_review")
 
@@ -129,6 +122,7 @@ class Product(models.Model):
 
     date = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(null=True, blank=True)
+
 
 
     class Meta:
@@ -144,7 +138,7 @@ class Product(models.Model):
         new_price = (self.price / self.old_price) * 100
         return new_price
 
-# Product immage model
+
 class ProductImages(models.Model):
     images = models.ImageField(upload_to="product-images", default="product.jpg")
     product = models.ForeignKey(Product, related_name="p_images", on_delete=models.SET_NULL, null=True)
@@ -155,10 +149,20 @@ class ProductImages(models.Model):
         verbose_name_plural = "Product Images"
 
 
-# Cart Order Model 
+
+
+
+############################################## Cart, Order, OrderITems and Address ##################################
+############################################## Cart, Order, OrderITems and Address ##################################
+############################################## Cart, Order, OrderITems and Address ##################################
+############################################## Cart, Order, OrderITems and Address ##################################
+
+
+
+
 class CartOrder(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    price = models.DecimalField(max_digits=7, decimal_places=2, default="1.99")
+    price = models.DecimalField(max_digits=99999999999999, decimal_places=2, default="1.99")
     paid_status = models.BooleanField(default=False, null=True, blank=True)
     order_date = models.DateTimeField(auto_now_add=True, null=True, blank=True)
     product_status = models.CharField(choices=STATUS_CHOICE, max_length=30, default="processing")
@@ -168,7 +172,6 @@ class CartOrder(models.Model):
         verbose_name_plural = "Cart Order"
 
 
-# Cart Order Products Model
 class CartOrderProducts(models.Model):
     order = models.ForeignKey(CartOrder, on_delete=models.CASCADE)
     invoice_no = models.CharField(max_length=200)
@@ -176,8 +179,8 @@ class CartOrderProducts(models.Model):
     item = models.CharField(max_length=200)
     image = models.CharField(max_length=200)
     qty = models.IntegerField(default=0)
-    price = models.DecimalField(max_digits=7, decimal_places=2, default="1.99")
-    total = models.DecimalField(max_digits=7, decimal_places=2, default="1.99")
+    price = models.DecimalField(max_digits=99999999999999, decimal_places=2, default="1.99")
+    total = models.DecimalField(max_digits=99999999999999, decimal_places=2, default="1.99")
 
 
     class Meta:
@@ -188,7 +191,16 @@ class CartOrderProducts(models.Model):
         return mark_safe('<img src="/media/%s" width="50" height="50" />' % (self.image))
 
 
-# Product review model
+
+
+############################################## Product Revew, wishlists, Address ##################################
+############################################## Product Revew, wishlists, Address ##################################
+############################################## Product Revew, wishlists, Address ##################################
+############################################## Product Revew, wishlists, Address ##################################
+
+
+
+
 class ProductReview(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True, related_name="reviews")
@@ -206,12 +218,11 @@ class ProductReview(models.Model):
         return self.rating
 
 
-# Wishlist model
+
 class wishlist_model(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     product = models.ForeignKey(Product, on_delete=models.SET_NULL, null=True)
     date = models.DateTimeField(auto_now_add=True)
-
 
     class Meta:
         verbose_name_plural = "wishlists"
@@ -220,13 +231,11 @@ class wishlist_model(models.Model):
         return self.product.title
 
 
-# address model
 class Address(models.Model):
     user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     mobile = models.CharField(max_length=300, null=True)
     address = models.CharField(max_length=100, null=True)
     status = models.BooleanField(default=False)
 
-    # Inner class of your model class, used to change the behaviour of model fields like verbose_name
     class Meta:
         verbose_name_plural = "Address"

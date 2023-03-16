@@ -3,7 +3,6 @@ from useradmin import views
 
 app_name = "useradmin"
 
-# url patterns for admin dashboard
 urlpatterns = [
     path("", views.dashboard, name="dashboard"),
     path("products/", views.dashboard_products, name="dashboard-products"),
