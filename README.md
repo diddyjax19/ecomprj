@@ -1,6 +1,6 @@
 # **The Nest Mart and Grocery**
 
-The Nest Mart and Grocery is a regular store where people can go to browse and order from a variety of goods and products.The varietystretches from baked good to fresh fruits among others.The store is open 24 hrs with staffs processing order to meet the clients need, it also as a place where vendors can register and be part of the community. Through the The Nest Mart and Grocery website, users can check thier orders and the status of the delivery,they are also aware of where the good are coming from.
+The Nest Mart and Grocery is a regular store where people can go to browse and order from a variety of goods and products.The variety  stretches from baked good to fresh fruits among others.The store is open 24 hrs with staffs processing order to meet the clients need, it also as a place where vendors can register and be part of the community. Through the The Nest Mart and Grocery website, users can check thier orders and the status of the delivery,they are also aware of where the good are coming from.
 
  A simple online market place built with the Django Framework using HTML, CSS and Javascript
 
@@ -128,7 +128,7 @@ Here I have listed the main user stories for three types of user. A normal user 
 | As a Site User | I can log in so that I can interact fully with the site | &check; |
 | As a New User | I can sign up so that I can interact fully with the site | &check; |
 | As a Site User | I can log out from the site so that no-one else can interact with the site using my details | &check; |
-| As a Site User | I can view the café menu | &check; |
+| As a Site User | I can view the Nest Website menu | &check; |
 | As a Site User | I can view the craft workshop schedule | &check; |
 
 ### Logged In Site User
@@ -136,9 +136,7 @@ Here I have listed the main user stories for three types of user. A normal user 
 |:-------:|:--------|:--------|
 | As a Site User | I can log in so that I can interact fully with the site | &check; |
 | As a Site User | I can log out from the site so that no-one else can interact with the site using my details | &check; |
-| As a Site User | I can view community craft posts so that I can see photos of all the craft user's creations | &check;
-| As a Site User | I can filter the community craft posts so that I can see posts which relate to my favourite craft category | &check;
-| As a Site User | I can view the number of likes on each post so that I can see how popular a specific post is | &check; |
+| As a Site User | I can view the number of ratings each post so that I can see how popular a specific post is | &check; |
 | As a Site User | I can view the number of comments on each post so that I can see how popular a specific post is | &check; |
 | As a Site User | I can create a new post so that I can contribute to the craft cafe community | &check; | 
 | As a Site User | I can edit any of my posts so that I can amend any errors or add missing information | &check; | 
@@ -164,7 +162,8 @@ Here I have listed the main user stories for three types of user. A normal user 
 |:-------:|:--------|:--------|
 | As a Super User | I can log in so that I can interact fully with the site | &check; |
 | As a Super User | I can log out from the site so that no-one else can interact with the site using my details | &check; |
-| As a Super User | I can view community craft posts | &check;
+| As a Super User | I can view all the products and review them | &check;
+| As a Super User | I can publish products after final checks. | &check;
 | As a Super User | I can view the number of likes on each post so that I can see how popular a specific post is | &check; |
 | As a Super User | I can view the number of comments on each post so that I can see how popular a specific post is | &check; |
 | As a Super User | I can create a new post so that I can contribute to the craft cafe community | &check; | 
@@ -207,24 +206,21 @@ The color scheme chosen for the Craft Café site was based on the tones of the h
 ![Color Palette image](static/images/readme/color-palette.png)
 
 * ### Typography
-The main fonts used for the site are 'Rowdies' with a fallback font of cursive and 'Noto Sans JP' with a fallback font of sans-serif.
 
-* 'Rowdies' is used on the H1 and H2 headers . It's a very clean font that works really well in upper case. 
+The main fonts used for the site are 'Quicksand' with a fallback font of cursive and 'Lato' with a fallback font of sans-serif.
 
-* 'Noto Sans JP' was chosen for the main body and text sections of the site. It's tidy and easy to read.
+* "Quicksand"  is used on the H1,H2,H3 headers . It's a very clean font that works really well in upper case. 
 
-* 'Dancing Script' was used for the café menu as I preferred a more Italic font for this section.
+* 'Lato' was chosen for the main body and text sections of the site. It's tidy and easy to read.With Sans-serif has the backup font
 
-* 'Luckiest Guy' was used for the Craft Workshop Categories on the Homepage, as I wanted something bold, but at the same time fun to represent the creative side of the café.
+
 
 <details><summary><b>Fonts</b></summary>
-![Google Fonts Rowdies](static/images/readme/rowdies-font.png)
 
-![Google Fonts Noto Sans JP](static/images/readme/noto-sans-font.png)
+![ Google Fonts Quicksand ](media/screenshots/fonts.png)
 
-![Google Fonts Dancing Script](static/images/readme/dancing-script-font.png)
+![Google Fonts Lato](media/screenshots/lato.font.png)
 
-![Google Fonts Luckiest Guy](static/images/readme/luckiest-gut-font.png)
 </details><br/>
 
 [Back to top](<#table-of-content>)
@@ -238,22 +234,27 @@ The main features of the site are listed below.
 
 The navigation bar is very clean and straight forward. Depending if you are logged in or not different menus are visible for the site user. An extra menu item is visible if you are logged in as an administrator.
 
-For tablet and mobile devices, the navigation bar menu turns into a hamburger dropdown list.
-
 *Links that are visible to logged out users*
 
-* Craft Café Logo - On the far left hand side of the navigation bar is the Craft Cafe brand logo. This is visible throughout the site to all user types and contains a link back to the homepage.
+* Nest Mart & Grocery Logo - On the far left hand side of the navigation bar is the Nest Mart & Grocery brand logo. This is visible throughout the site to all user types and contains a link back to the homepage.
+
 * Home - The first menu item listed 'Home' takes the user to the main 'index.html' page with all the general site information listed.
-* Food - This link takes the user down the homepage to the 'Menu' section where lists of food and pricing can be found.
-* Craft Workshops - This lists the afternoon craft workshop schedule, and a description and pricing for each activity.
-* Sign Up - Directs non-community users to create an account.
-* Login - Gives the user the opportunity to log in or sign up if not ready a registered user.
+* Search bar - This Section helps the user search the products in the store.
+* Wishlist - This section helps the user to add products to his cart but since heor she is not signed in this place when clicked takes them too the sign in page.
+* Cart - In this section after the user has shopped and picked up all the product,he can find all the selected products here, but since he or she is not signed in this place when clicked takes them too the sign in page.
+* Accounts - Gives the user the opportunity to log in or sign up if not ready a registered user.
+* Admin Dashboard - Gives the user the opportunity to add product,this will not be visible if not ready a registered user.
+* Order Tracking - Gives the user the opportunity to track orders,this will not be visible  if not ready a registered user.
+* My Wishlist- Gives the user the opportunity to log in or sign up if not ready a registered user.
+* SignIn - Gives the user the opportunity to log in or sign up if not ready a registered user.
 
 <details><summary><b>Navigation - User Not Logged In</b></summary>
 
-![Navigation Large Device - User Not Logged In](static/images/readme/navbar-loggedout.png)
+![Navigation Large Device - User Not Logged In](media/screenshots/navigation page.PNG)
 
 ![Navigation Small Device - User Not Logged In](static/images/readme/navbar-loggedout-mobile.png)
+
+
 </details><br/>
 
 *Links that are visible to logged in users*
@@ -284,6 +285,30 @@ If the user is a superuser, they have one additional menu item available.
 
 ![Navigation Small - Admin Logged In](static/images/readme/navbar-loggedin-superuser-mobile.png)
 </details><br/>
+
+
+
+
+
+* Links that are visible to logged out users in the mega menu *
+
+* Browse Category - This link takes the user down the homepage to the 'Menu' section where lists of food and pricing can be found.
+* Category - This link takes the user down the homepage to the 'Menu' section where lists of food and pricing can be found.
+* Shop - This lists the afternoon craft workshop schedule, and a description and pricing for each activity.
+* Vendors - Directs non-community users to create an account.
+* Pages - Gives the user the opportunity to log in or sign up if not ready a registered user.
+* Contact - Gives the user the opportunity to contact or make enquires.
+* Contact number - Gives the user the opportunity to call the 24hrs support 
+
+
+
+
+
+
+
+
+
+
 
 ### **Hero Image**
 
@@ -775,13 +800,13 @@ Instead, we add the link to the DATABASE_URL that we added to the environment fi
 
 26. To be able to get the application to work through Heroku we also need to add our Heroku app and localhost to the ALLOWED_HOSTS list:
 
-```ALLOWED_HOSTS = ['c50commerce12.herokuapp.com', 'localhost']```
+```ALLOWED_HOSTS = ['https://nextit12.herokuapp.com/', 'localhost']```
 
 27. Now we just need to create the basic file directory in Gitpod.
 
 * Create 3 folders in the top level directory: **media**, **static**, **templates**
 
-* Create a file called **Procfile* and add the line ```web: gunicorn PROJ_NAME.wsgi?``` to it.
+* Create a file called **Procfile* and add the line ```web: gunicorn ecomprj.wsgi --preload``` to it.
 
 28
 
@@ -797,7 +822,7 @@ Instead, we add the link to the DATABASE_URL that we added to the environment fi
 
 31. Scroll down to the manual deployment section and click 'Deploy Branch'. Hopefully the deployment is successful!
 
-The live link to the Craft Cafe site on Heroku can be found [here](https://c50commerce12.herokuapp.com/). And the Github repository can be found [here](https://github.com/diddyjax19/CS50-Commerce-master).
+The live link to the Nest Ecommerce site on Heroku can be found [here](https://nextit12.herokuapp.com/). And the Github repository can be found [here](https://github.com/diddyjax19/ecomprj).
 
 [Back to top](<#table-of-content>)
 
@@ -869,7 +894,7 @@ To clone and set up this project you need to follow the steps below.
     * [Stack Overflow](https://stackoverflow.com/questions/12932959/remove-values-from-select-list-based-on-condition)
 
 # Acknowledgements
-This fictional site was created for Portfolio Project #4 (Full-Stack Toolkit) - Diploma in Full Stack Software Development at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for his support and feedback during the project.
+This fictional site was created for Portfolio Project #4 (Full-Stack Toolkit) - Diploma in Full Stack Software Development at the [Code Institute](https://www.codeinstitute.net). I would like to thank my mentor [Dario Carrasquel] for his support and feedback during the project.
 
 
 [Back to top](<#table-of-content>)
